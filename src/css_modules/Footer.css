@@ -1,0 +1,20 @@
+/* footer */
+.footer {
+  background-color: var(--red);
+  padding: 20px 0;
+  color: var(--white);
+  margin-top: 30px;
+}
+.footer1 {
+  background-color: var(--red);
+  color: var(--white);
+}
+.footer1 span {
+  font-size: 14px;
+}
+.footer p {
+  text-align: center;
+}
+.footer span {
+  font-size: 14px;
+}

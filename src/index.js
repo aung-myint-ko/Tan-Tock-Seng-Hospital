@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { createContext } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import CenterData from "./Data/CenterData";
+import ActivitiesData from "./Data/ActivitiesData";
+import ServiceData from "./Data/ServiceData";
+import PackageData from "./Data/PackageData";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+export const HospitalContext = createContext();
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <HospitalContext.Provider
+    value={{ CenterData, ActivitiesData, ServiceData, PackageData }}
+  >
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </HospitalContext.Provider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// window.addEventListener("scroll",()=>{
+//   if(window.screenTop())
+
+// })
+// $(window).scroll(function(){
+//   if($(this).scrollTop() > 90){
+//     $(".second_dsk").addClass('fixed');
+//   }else{
+//     $(".second_dsk").removeClass('fixed');
+//   }
+// })

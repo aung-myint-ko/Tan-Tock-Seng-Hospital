@@ -1,0 +1,88 @@
+const PackageData = [
+  {
+    id: 1,
+    title: "GENERAL PACKAGE",
+    imgURL: "/images/package1.jpg",
+    price: "100000 MMK to 300000 MMK",
+    route: "packages",
+    details: [
+      "Daisy package (recommended for <40 years) (male or female)",
+      "Iris package (recommended for <40 years)(male or female)",
+      "Lily package (Gentlemen>40 years)",
+      "Jasmine package (Ladies >40 years)",
+      "Tulip package for Premarital couples (male or female)",
+    ],
+  },
+  {
+    id: 2,
+    title: "SYSTEMIC PACKAGES",
+    imgURL: "/images/package2.jpg",
+    price: "Prices are subject to change without prior notice.",
+    route: "packages",
+    details: [
+      "Daisy package (recommended for <40 years) (male or female)",
+      "Iris package (recommended for <40 years)(male or female)",
+      "Lily package (Gentlemen>40 years)",
+      "Jasmine package (Ladies >40 years)",
+      "Tulip package for Premarital couples (male or female)",
+    ],
+  },
+  {
+    id: 3,
+    title: "CORPORATE PACKAGES",
+    imgURL: "/images/package3.jpg",
+    price: "Prices are subject to change without prior notice.",
+    route: "packages",
+    details: [
+      "Daisy package (recommended for <40 years) (male or female)",
+      "Iris package (recommended for <40 years)(male or female)",
+      "Lily package (Gentlemen>40 years)",
+      "Jasmine package (Ladies >40 years)",
+      "Tulip package for Premarital couples (male or female)",
+    ],
+  },
+  {
+    id: 4,
+    title: "ENDOSCOPY PACKAGES",
+    imgURL: "/images/package4.jpg",
+    price: "Prices are subject to change without prior notice.",
+    route: "packages",
+    details: [
+      "Daisy package (recommended for <40 years) (male or female)",
+      "Iris package (recommended for <40 years)(male or female)",
+      "Lily package (Gentlemen>40 years)",
+      "Jasmine package (Ladies >40 years)",
+      "Tulip package for Premarital couples (male or female)",
+    ],
+  },
+  {
+    id: 5,
+    title: "LABOUR PACKAGES",
+    imgURL: "/images/package5.jpg",
+    price: "Prices are subject to change without prior notice.",
+    route: "packages",
+    details: [
+      "Daisy package (recommended for <40 years) (male or female)",
+      "Iris package (recommended for <40 years)(male or female)",
+      "Lily package (Gentlemen>40 years)",
+      "Jasmine package (Ladies >40 years)",
+      "Tulip package for Premarital couples (male or female)",
+    ],
+  },
+  {
+    id: 6,
+    title: "GOLDEN PACKAGE",
+    imgURL: "/images/package6.jpg",
+    price: "Prices are subject to change without prior notice.",
+    route: "packages",
+    details: [
+      "Daisy package (recommended for <40 years) (male or female)",
+      "Iris package (recommended for <40 years)(male or female)",
+      "Lily package (Gentlemen>40 years)",
+      "Jasmine package (Ladies >40 years)",
+      "Tulip package for Premarital couples (male or female)",
+    ],
+  },
+];
+
+export default PackageData;

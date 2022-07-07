@@ -1,25 +1,80 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HospitalContext } from ".";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import SpecialityCenter from "./pages/SpecialityCenter";
+import SpecialityCenterSub from "./pages/SpecialityCenterSub";
+import ServicePackage from "./pages/ServicePackage";
+import ServiceDetailsPage from "./pages/ServiceDetailsPage";
+import PackageDetailsPage from "./pages/PackageDetailsPage";
+import ContactUs from "./pages/ContactUs";
+import ScrollToTop from "./custom_hook/ScrollToTop";
 
-function App() {
+export default function App() {
+  const { CenterData, ServiceData, PackageData } = useContext(HospitalContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+
+            <Route path="/about-us" element={<About />} />
+            <Route path="/speciality-centers" element={<SpecialityCenter />} />
+            {CenterData.map((Center) => {
+              return (
+                <Route
+                  key={Center.id}
+                  path={`/speciality-centers/${Center.id}`}
+                  element={
+                    <SpecialityCenterSub
+                      title={Center.title}
+                      secImgURL={Center.secImgURL}
+                    />
+                  }
+                />
+              );
+            })}
+            <Route path="/services-packages" element={<ServicePackage />} />
+            {ServiceData.map((Center) => {
+              return (
+                <Route
+                  key={Center.id}
+                  path={`/services-packages/services/${Center.id}`}
+                  element={
+                    <ServiceDetailsPage
+                      title={Center.title}
+                      subTitle={Center.subTitle}
+                      description={Center.description}
+                      imgURL={Center.imgURL}
+                    />
+                  }
+                />
+              );
+            })}
+            {PackageData.map((Center) => {
+              return (
+                <Route
+                  key={Center.id}
+                  path={`/services-packages/packages/${Center.id}`}
+                  element={
+                    <PackageDetailsPage
+                      title={Center.title}
+                      price={Center.price}
+                      details={Center.details}
+                      imgURL={Center.imgURL}
+                    />
+                  }
+                />
+              );
+            })}
+            <Route path="/contact-us" element={<ContactUs />} />
+          </Routes>
+        </ScrollToTop>
+      </Router>
+    </>
   );
 }
-
-export default App;

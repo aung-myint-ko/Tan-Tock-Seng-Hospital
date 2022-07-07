@@ -1,0 +1,66 @@
+const CenterData = [
+  {
+    id: 1,
+    imgURL: "/images/special1.jpg",
+    secImgURL: "/images/special-detail1.jpg",
+    title: "FERTILITY CENTRE",
+    description: "From Hope to Happiness",
+  },
+  {
+    id: 2,
+    imgURL: "/images/special2.jpg",
+    secImgURL: "/images/special-detail2.jpg",
+    title: "ORL-HEAD & NECK SURGERY CENTRE",
+    description: "High Tech ENT, Head & Neck Surgery One Stop Solution",
+  },
+  {
+    id: 3,
+    imgURL: "/images/special3.jpg",
+    secImgURL: "/images/special-detail3.jpg",
+    title: "MEDICAL CENTRE OF CHEMOTHERAPY",
+    description: "Healthy Life And Happy Life",
+  },
+  {
+    id: 4,
+    imgURL: "/images/special4.jpg",
+    secImgURL: "/images/special-detail4.jpg",
+    title: "PHYSIOTHERAPY CENTRE",
+    description: "Healthy Bone",
+  },
+  {
+    id: 5,
+    imgURL: "/images/special5.jpg",
+    secImgURL: "/images/special-detail5.jpg",
+    title: "UROLOGY CENTRE",
+    description: "Healthy Kidneys, Healthy Life",
+  },
+  {
+    id: 6,
+    imgURL: "/images/special6.jpg",
+    secImgURL: "/images/special-detail6.jpg",
+    title: "DIABETES CENTRE",
+    description: "Better Care, Better Life",
+  },
+  {
+    id: 7,
+    imgURL: "/images/special7.jpg",
+    secImgURL: "/images/special-detail7.jpg",
+    title: "WELLNESS CENTRE",
+    description: "Caring Your Lifestyle to Get Healthy Future",
+  },
+  {
+    id: 8,
+    imgURL: "/images/special8.jpg",
+    secImgURL: "/images/special-detail8.jpg",
+    title: "COVID-19 CENTRE",
+    description: "Fastest Treatments, Fastest Recovery",
+  },
+  {
+    id: 9,
+    imgURL: "/images/special9.jpg",
+    secImgURL: "/images/special-detail9.jpg",
+    title: "SKIN, AESTHETIC & LASER CENTRE",
+    description: "Quality Care for Your Skin",
+  },
+];
+export default CenterData;

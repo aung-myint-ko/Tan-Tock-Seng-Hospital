@@ -1,0 +1,15 @@
+.bar {
+  border-top: 1px solid #9f9faa !important;
+}
+.bg_color {
+  background-color: var(--white);
+}
+.three_card {
+  margin: 0 0 40px 0;
+}
+.three_card h5 {
+  text-shadow: 0px 0px 30px var(--red);
+}
+img {
+  width: 100%;
+}
