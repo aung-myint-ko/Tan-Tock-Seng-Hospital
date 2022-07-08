@@ -5,28 +5,11 @@ import { NavLink, Link } from "react-router-dom";
 
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
-  // const [show, setShow] = useState(true);
 
-  // const navbarControl = () => {
-  //   if (window.scrollY > 165) {
-  //     setShow(false);
-  //   } else {
-  //     setShow(true);
-  //   }
-  // };
-  // useEffect(() => {
-  //   window.addEventListener("scroll", navbarControl);
-  //   return () => {
-  //     window.removeEventListener("scroll", navbarControl);
-  //   };
-  // });
   useEffect(() => {
     const CloseNav = (e) => {
       if (e.target.id !== "menu_icon" && e.target.id !== "three_line") {
         setClicked(false);
-        console.log("true");
-      } else {
-        console.log("false");
       }
     };
     document.body.addEventListener("click", CloseNav);
@@ -50,7 +33,6 @@ const Nav = () => {
           </Link>
         </div>
         <div className="hamburger">
-          {/* <i onClick={handleClick} className="fas fa-bars"></i> */}
           <div
             id="menu_icon"
             onClick={handleClick}

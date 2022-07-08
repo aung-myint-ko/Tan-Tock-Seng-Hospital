@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css_modules/SpecialCenter.css";
 import CenterCard from "./specialityCenter/CenterCard";
-import ServiceCard from "./servicesPackages/ServiceCard";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -64,7 +63,7 @@ export const ServicePackageSwiper = ({ centerData, domain }) => {
         return (
           <SwiperSlide className="sCenter-slide" key={center.id}>
             <Link to={`/services-packages/${domain}/${center.id}`}>
-              <ServiceCard imgURL={center.imgURL} title={center.title} />
+              <CenterCard imgURl={center.imgURL} title={center.title} />
             </Link>
           </SwiperSlide>
         );
@@ -82,7 +81,7 @@ export const ServicePackageGrid = ({ centerData, domain }) => {
             key={center.id}
             to={`/services-packages/${domain}/${center.id}`}
           >
-            <ServiceCard imgURL={center.imgURL} title={center.title} />
+            <CenterCard imgURl={center.imgURL} title={center.title} />
           </Link>
         );
       })}

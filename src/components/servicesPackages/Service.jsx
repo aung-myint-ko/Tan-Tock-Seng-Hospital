@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { HospitalContext } from "../..";
 import { ServicePackageGrid, ServicePackageSwiper } from "../CarouselOrGrid";
+import Fade from "react-reveal/Fade";
 
 const Service = () => {
   const { ServiceData } = useContext(HospitalContext);
@@ -16,12 +17,12 @@ const Service = () => {
   }, [width]);
   return (
     <div className="pt_adjustment sm:mx-16 md:mx-24">
-      <h3
-        data-aos="fade-down"
-        className="red mx-5 sm:mx-0 pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black "
-      >
-        SERVICES
-      </h3>
+      <Fade top>
+        <h3 className="red mx-5 sm:mx-0 pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
+          SERVICES
+        </h3>
+      </Fade>
+
       {width > 640 ? (
         <ServicePackageGrid centerData={ServiceData} domain={"services"} />
       ) : (
