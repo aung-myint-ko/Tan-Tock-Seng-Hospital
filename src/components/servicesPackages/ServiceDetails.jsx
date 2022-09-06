@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { HospitalContext } from "../..";
 import RedirectingLinks from "./RedirectingLinks";
 import Fade from "react-reveal/Fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ServiceDetails = ({ title, imgURL, description, subTitle }) => {
   const { ServiceData } = useContext(HospitalContext);
@@ -12,13 +13,11 @@ const ServiceDetails = ({ title, imgURL, description, subTitle }) => {
   return (
     <div className=" overflow-hidden pt_adjustment mx-5 sm:mx-16 md:mx-24 mb-10 md:grid md:grid-cols-4 md:gap-10">
       <div className="col-span-3">
+        <h3 className="red pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
+          {title}
+        </h3>
         <Fade left>
-          <h3 className="red pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
-            {title}
-          </h3>
-        </Fade>
-        <Fade left>
-          <img
+          <LazyLoadImage
             className="my-3 md:my-6 h-40 md:w-5/6 md:h-80"
             src={imgURL}
             alt=""
@@ -32,7 +31,7 @@ const ServiceDetails = ({ title, imgURL, description, subTitle }) => {
             {subTitle.map((sub) => {
               return (
                 <li key={sub} className=" flex mt-1">
-                  <img
+                  <LazyLoadImage
                     className="bullet-img"
                     src="/images/small_logo.png"
                     alt=""

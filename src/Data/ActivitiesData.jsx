@@ -9,7 +9,7 @@ const ActivitiesData = [
   },
   {
     id: 2,
-    delay: "500",
+    delay: "400",
     title: "Patient's Testimonial",
     img: "images/testimonial.jpg",
     descriptions: `Successful second case of ischemic stroke patient treated by
@@ -17,7 +17,7 @@ const ActivitiesData = [
   },
   {
     id: 3,
-    delay: "1000",
+    delay: "800",
     title: "Tan Tock Seng Charity Group",
     img: "images/donation.jpg",
     descriptions: `Victoria Hospital offers comprehensive medical services with

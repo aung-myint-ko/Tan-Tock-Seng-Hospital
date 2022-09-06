@@ -1,11 +1,13 @@
 import React from "react";
 import "../../css_modules/SpecialCenter.css";
 import Fade from "react-reveal/Fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const SpecialityCenterDetails = ({ title, secImgURL }) => {
   return (
     <div className=" overflow-hidden">
       <div className="pt_adjustment relative h-40 md:h-72">
-        <img className=" w-full h-full" src={secImgURL} alt="" />
+        <LazyLoadImage className=" w-full h-full" src={secImgURL} alt="" />
         <div className="overley">
           <Fade left>
             <h5 className="absolute bottom-5 left-5 sm:left-16 md:left-24 text-white text-xl font-bold ">

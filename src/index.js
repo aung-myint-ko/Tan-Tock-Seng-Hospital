@@ -6,6 +6,13 @@ import CenterData from "./Data/CenterData";
 import ActivitiesData from "./Data/ActivitiesData";
 import ServiceData from "./Data/ServiceData";
 import PackageData from "./Data/PackageData";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({
+  once: "true",
+  duration: 1000,
+  offset: 50,
+});
 
 export const HospitalContext = createContext();
 

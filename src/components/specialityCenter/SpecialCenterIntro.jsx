@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css_modules/SpecialCenter.css";
 import Fade from "react-reveal/Fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const specialLabels = [
   {
@@ -58,19 +59,17 @@ const SpecialityCenterDetails = () => {
   return (
     <>
       <div className="pt_adjustment mx-5 sm:mx-16 md:mx-24">
-        <Fade top>
-          <h3 className="red pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
-            SPECIALITY CENTERS
-          </h3>
-        </Fade>
+        <h3 className="red pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
+          SPECIALITY CENTERS
+        </h3>
 
         <div className="paragraph pt-2 sm:pt-3 overflow-hidden">
-          <Fade top>
+          <Fade bottom>
             <h5 className="pb-2 text-base font-semibold">
               Centres of Excellence
             </h5>
           </Fade>
-          <Fade top>
+          <Fade bottom>
             <p className="mb-2 text-xs sm:text-base ">
               Our specialized centres cater to treatments that go beyond the
               basic. Each centre is fully equipped with one of the latest
@@ -86,7 +85,11 @@ const SpecialityCenterDetails = () => {
               {specialLabels.map((label) => {
                 return (
                   <li key={label.title} className=" flex mt-1">
-                    <img className="bullet-img" src={label.imgURL} alt="" />
+                    <LazyLoadImage
+                      className="bullet-img"
+                      src={label.imgURL}
+                      alt=""
+                    />
                     <p className=" my-auto h-fit text-xs sm:text-base">
                       {label.title}
                     </p>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "../css_modules/Nav.css";
 import { NavLink, Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
@@ -24,7 +25,7 @@ const Nav = () => {
       <div className="first_nav ">
         <div className="logo_img">
           <Link to={"/"}>
-            <img
+            <LazyLoadImage
               src={"/images/ttshlogo.png"}
               width="100%"
               height="100%"

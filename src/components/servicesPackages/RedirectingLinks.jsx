@@ -10,11 +10,11 @@ const RedirectingLinks = ({ Data }) => {
     color: "#ac1c2c",
   };
   return (
-    <Fade right>
-      <div>
-        <h3 className="red pt-6 pb-3 text-xl md:text-2xl font-semibold border-b border-black ">
-          Our Services
-        </h3>
+    <div>
+      <h3 className="red pt-6 pb-3 text-xl md:text-2xl font-semibold border-b border-black ">
+        Our Services
+      </h3>
+      <Fade right>
         <ul className="mt-3 md:my-6 ">
           {Data.map((data) => {
             return (
@@ -30,8 +30,8 @@ const RedirectingLinks = ({ Data }) => {
             );
           })}
         </ul>
-      </div>
-    </Fade>
+      </Fade>
+    </div>
   );
 };
 

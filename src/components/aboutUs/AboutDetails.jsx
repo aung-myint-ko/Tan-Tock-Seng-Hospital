@@ -1,27 +1,24 @@
 import React from "react";
 import Slogan from "./Slogan";
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 
 const AboutDetails = () => {
   return (
     <div className=" overflow-hidden">
       <div className="pt_adjustment mx-9 sm:mx-16 md:mx-24">
-        <Fade top>
-          <h3 className="red pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
-            ABOUT US
-          </h3>
-        </Fade>
+        <h3 className="red pt-6 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
+          ABOUT US
+        </h3>
 
         <div className="py-2 sm:py-3 border-b border-black">
-          <Slide top>
+          <Fade bottom>
             <h5 className="pb-2 text-base font-semibold">
               ABOUT TAN TOCK SENG HOSPITAL
             </h5>
-          </Slide>
+          </Fade>
 
           <div className=" overflow-hidden">
-            <Fade top>
+            <Fade bottom>
               <p className="mb-2 text-xs md:text-base">
                 Tan Tock Seng Hospital was established on 25th June 2011. Its
                 birth was motivated by and anchored on providing advanced and
@@ -30,7 +27,7 @@ const AboutDetails = () => {
                 the field.
               </p>
             </Fade>
-            <Fade top>
+            <Fade bottom>
               <p className="mb-2 text-xs md:text-base text-gray-500">
                 Its unassuming and forward looking disposition has shaped the
                 hospital as one of the leading hospitals in Myanmar, gaining the
@@ -40,7 +37,7 @@ const AboutDetails = () => {
                 businesses alike.
               </p>
             </Fade>
-            <Fade top>
+            <Fade bottom>
               <p className="mb-2 text-xs md:text-base">
                 Since its inception, and with the realization and understanding
                 of the local healthcare needs, Tan Tock Seng Hospital has
@@ -55,7 +52,7 @@ const AboutDetails = () => {
                 demands.
               </p>
             </Fade>
-            <Fade top>
+            <Fade bottom>
               <p className="mb-2 text-xs md:text-base text-gray-500">
                 Not forgetting the less fortunate living in the country, Tan
                 Tock Seng Hospital has unreservedly been extending helping hands
@@ -66,7 +63,7 @@ const AboutDetails = () => {
                 Seng's culture to go beyond mediocre effort to provide genuine.
               </p>
             </Fade>
-            <Fade top>
+            <Fade bottom>
               <p className="mb-2 text-xs md:text-base">
                 To continue with what the hospital has started, everyone in Tan
                 Tock Seng Hospital is prepared to go the extra mile to produce
@@ -79,14 +76,14 @@ const AboutDetails = () => {
                 patients. Whilst patients put their trusts in Tan Tock Seng.
               </p>
             </Fade>
-            <Fade top>
+            <Fade bottom>
               <p className="mb-2 text-xs md:text-base text-gray-500">
                 Tan Tock Seng puts her 'Quality Care' into action. It is all
                 about the 'Synergy of international healthcare standard and
                 professional healthcare service providers'.
               </p>
             </Fade>
-            <Fade top>
+            <Fade bottom>
               <p className="mb-2 text-xs md:text-base">
                 Tan Tock Seng Hospital aims to go beyond medical and healthcare
                 services. Emphasis has also been placed on forging and nurturing

@@ -18,12 +18,10 @@ const Package = () => {
   return (
     <div className="mb-10 sm:mx-16 md:mx-24">
       <div className="mx-5 sm:mx-0">
-        <Fade top>
-          <h3 className="red  pt-6 sm:pt-0 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
-            PACKAGES
-          </h3>
-        </Fade>
-        <Fade top>
+        <h3 className="red  pt-6 sm:pt-0 pb-3 text-xl sm:text-3xl font-semibold border-b border-black ">
+          PACKAGES
+        </h3>
+        <Fade bottom>
           <p className="mb-2 pt-2 sm:pt-3 text-xs sm:text-base">
             Our specialized centres cater to treatments that go beyond the
             basic. Each centre is fully equipped with one of the latest medical

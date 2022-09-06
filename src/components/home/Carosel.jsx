@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Carosel = () => {
   return (
@@ -24,16 +25,16 @@ const Carosel = () => {
         className="mySwiper carouselSwiper"
       >
         <SwiperSlide className="carousel-slide">
-          <img src="images/background1.jpg" alt="" />
+          <LazyLoadImage src="images/background1.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide className="carousel-slide">
-          <img src="images/background3.jpg" alt="" />
+          <LazyLoadImage src="images/background3.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide className="carousel-slide">
-          <img src="images/background2.jpg" alt="" />
+          <LazyLoadImage src="images/background2.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide className="carousel-slide">
-          <img src="images/background4.jpg" alt="" />
+          <LazyLoadImage src="images/background4.jpg" alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
